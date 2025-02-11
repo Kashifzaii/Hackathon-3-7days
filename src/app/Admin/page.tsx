@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { client } from "@/sanity/lib/client";
-import CountMeter from "@/app/components/CountMeter";
-import OrdersChart from "@/app/components/OrdersChart";
-import RevenueChart from "@/app/components/RevenueChart";
+import CountMeter from "../../Components/CountMeter";
+import OrdersChart from "../../Components/OrdersChart";
+import RevenueChart from "../../Components/RevenueChart";
 
 export default function Page() {
   const [data, setData] = useState<
