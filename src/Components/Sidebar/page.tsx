@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 
 import {
   Layers2,
@@ -15,7 +16,7 @@ import { usePathname, useRouter } from "next/navigation";
 interface MenuItem {
   name: string;
   link: string;
-  icon: JSX.Element;
+  icon: React.ReactNode;
   isLogout?: boolean
 }
 

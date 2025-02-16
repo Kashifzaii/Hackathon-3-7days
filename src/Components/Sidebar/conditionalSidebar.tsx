@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import SideBar from "@/app/components/Sidebar/page";
+import SideBar from "@/Components/Sidebar/page";
 import Header from "../Header";
 
 const ConditionalSideBar = () => {

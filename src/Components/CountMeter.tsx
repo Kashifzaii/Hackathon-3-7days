@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { client } from "@/sanity/lib/client"; // import the Sanity client
+import Image from "next/image";
 
 // Define the types for the fetched data
 interface CountData {
@@ -72,7 +73,7 @@ function Card({ title, value, imgURL }: CardProps) {
         <h1 className="font-semibold text-xl">{value}</h1>
         <h1 className="text-sm text-gray-700">{title}</h1>
       </div>
-      <img className="h-10" src={imgURL} alt={title} />
+      <Image className="h-10" src={imgURL} alt={title} />
     </div>
   );
 }
